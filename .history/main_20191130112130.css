@@ -44,16 +44,16 @@ body{
 }
 
 .line_block{
-    background-image: url(img/blocks.png);
+    background-image: url(/img/blocks.png);
 }
 .line_grass{
-    background-image: url(img/grass.png);
+    background-image: url(/img/grass.png);
 }  
 
 .stone{
     height: 100px;
     width: 100px;
-    background-image:  url(img/boulder.png);
+    background-image:  url(/img/boulder.png);
     background-size: cover;
     background-repeat: round;
    
@@ -61,7 +61,7 @@ body{
 .rock{
     height: 100px;
     width: 100px;
-    background-image:  url(img/spr_boulder_0.png);
+    background-image:  url(/img/spr_boulder_0.png);
     background-size: cover;
     background-repeat: round;
 }
@@ -73,11 +73,11 @@ body{
 }
 
 .playerOne{
-    background-image: url(img/graphics-sprites-WOAsprite.png);
+    background-image: url(/img/graphics-sprites-WOAsprite.png);
 }
 
 .playerTwo{
-    background-image: url(img/graphics-sprites-WOAsprite.png);
+    background-image: url(/img/graphics-sprites-WOAsprite.png);
     filter: invert(100%);
 }
 
@@ -97,37 +97,37 @@ body{
 }
 
 .tree{
-    background-image: url(img/baum.png);
+    background-image: url(/img/baum.png);
     background-size: cover;
     height: 100px;
     width: 100px;
 }
  .axe{
-    background-image: url(img/axeDouble2.png);
+    background-image: url(/img/axeDouble2.png);
     background-size: cover;
     height: 100px;
     width:100px;
  }
  .sword{
-    background-image: url(img/upg_sword.png);
+    background-image: url(/img/upg_sword.png);
     background-size: cover;
     height: 100px;
     width:100px;
  }
  .bow{
-    background-image: url(img/upg_bow.png);
+    background-image: url(/img/upg_bow.png);
     background-size: cover;
     height: 100px;
     width:100px;
  }
  .wand{
-    background-image: url(img/upg_wand.png);
+    background-image: url(/img/upg_wand.png);
     background-size: cover;
     height: 100px;
     width:100px;
  }
  .knife{
-    background-image: url(img/upg_dagger.png);
+    background-image: url(/img/upg_dagger.png);
     background-size: cover;
     height: 100px;
     width:100px;
@@ -176,15 +176,15 @@ body{
  }
 
  .lifeIcon{
-    background-image: url(img/FFXIV_Healer_Icon.png);
+    background-image: url(/img/FFXIV_Healer_Icon.png);
 }
 
 .attackIcon{
-    background-image: url(img/FFXIV_DPS_Icon.png);
+    background-image: url(/img/FFXIV_DPS_Icon.png);
 }
 
  .defenseIcon{
-     background-image: url(img/FFXIV_Tank_Icon.png);
+     background-image: url(/img/FFXIV_Tank_Icon.png);
  }
 
  /*
@@ -196,7 +196,7 @@ body{
  #battleBoard{
     width: 1000px;
     height: 290px;
-    background-image: url(img/pixel-art-sun-grass-clouds-wallpaper.jpg);
+    background-image: url(/img/pixel-art-sun-grass-clouds-wallpaper.jpg);
     background-size: 1000px 290px;
     position: absolute;
     left: 20%;
