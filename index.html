@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="mainBoard"></div>
+    
+    <div id="scoreBoard"></div>
+
+    <div id="battleBoard">
+        <div class="battleBoardHeader"></div>
+        <div class="battleBoardBody">
+            <div id="playerOneBattle" class="playerBattle">
+                <div id="playerOneCharacter" class="playerBattle playerOne scoreBoardPlayer"></div>
+                <div id="playerOneBtn" class="playerBtn">
+                    <div id="playerOneAttackBtn" class="attacktBtn attackIcon scoreBoardLabels"></div>
+                    <div id="playerOneDefenseBtn" class="defenseBtn defenseIcon scoreBoardLabels"></div>
+                </div>
+                <div id="playerOneWinner" class="playerWinner">Player One Won!</div>
+                <div id="playerOneLog" class="playerLog"></div>
+                <div class="healthBarDiv"><progress id="healthBarPlayerOne" class="healthBar" value="100" max="100"></progress></div>
+            </div>
+            <div id="playerTwoBattle" class="playerBattle">
+                <div id="playerTwoCharacter" class="playerTwo scoreBoardPlayer"></div>
+                <div id="playerTwoBtn" class="playerBtn">
+                    <div id="playerTwoAttackBtn" class="attackBtn attackIcon scoreBoardLabels"></div>
+                    <div id="playerTwoDefenseBtn" class="defenseBtn defenseIcon scoreBoardLabels"></div>
+                </div>
+                <div id="playerTwoWinner" class="playerWinner">Player Two Won!</div>
+                <div id="playerTwoLog" class="playerLog"></div>
+                <div class="healthBarDiv"><progress id="healthBarPlayerTwo" class="healthBar" value="100" max="100"></progress></div>
+            </div>
+        </div>
+        <div class="battleBoardFooter">
+            <div>
+                <button id="newGameBtn" class="invisible" onclick="window.location.reload();">New Game</button>
+            </div>
+        </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="javascript/scoreBoard.js"></script>
+    <script src="javascript/boardObstacle.js"></script>
+    <script src="javascript/boardWeapon.js"></script>
+    <script src="javascript/boardPlayer.js"></script>
+    <script src="javascript/mainBoard.js"></script>
+    <script src="javascript/main.js"></script>
+
+    
+    
+</body>
+</html>

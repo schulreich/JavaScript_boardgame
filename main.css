@@ -1,0 +1,281 @@
+body{
+    background-image: url(/img/body_bg.jpg);
+}
+
+.invisible{
+    display: none;
+}
+
+#mainBoard{
+    display: grid;
+    position: absolute;
+    left: 20%;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px ;
+    grid-template-rows: repeat(10,minmax(100px,auto));
+    color: #444;
+    border: 2px solid black;
+}
+
+#scoreboard{
+    width : 250px;
+    height : 200px;
+}
+
+.playerLog{
+    position: absolute;
+    top: 150px;
+    left: 430px;
+    width: 170px;
+    height: 20px;
+    color: yellow;
+    font-size: x-large;
+}
+
+.cell{
+    border:1px solid black;
+}
+
+.movement_possible{
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+}
+
+.movement_impossible{
+    filter: sepia(100%) hue-rotate(320deg) saturate(500%);
+}
+
+.line_block{
+    background-image: url(/img/blocks.png);
+}
+.line_grass{
+    background-image: url(/img/grass.png);
+}  
+
+.stone{
+    height: 100px;
+    width: 100px;
+    background-image:  url(/img/boulder.png);
+    background-size: cover;
+    background-repeat: round;
+   
+}
+.rock{
+    height: 100px;
+    width: 100px;
+    background-image:  url(/img/spr_boulder_0.png);
+    background-size: cover;
+    background-repeat: round;
+}
+
+.player{
+    height: 100px;
+    width:100px;
+    background-size: auto;
+}
+
+.playerOne{
+    background-image: url(/img/graphics-sprites-WOAsprite.png);
+}
+
+.playerTwo{
+    background-image: url(/img/graphics-sprites-WOAsprite.png);
+    filter: invert(100%);
+}
+
+.playerOneRight{
+     background-position-y: 20pc;
+}
+
+.playerTwoLeft{
+    background-position-y: 46pc;
+}
+
+.playerOneDown{
+    background-position-y: 20pc;
+}
+.playerTwoDown{
+   background-position-y: 46pc;
+}
+
+.tree{
+    background-image: url(/img/baum.png);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+ .axe{
+    background-image: url(/img/axeDouble2.png);
+    background-size: cover;
+    height: 100px;
+    width:100px;
+ }
+ .sword{
+    background-image: url(/img/upg_sword.png);
+    background-size: cover;
+    height: 100px;
+    width:100px;
+ }
+ .bow{
+    background-image: url(/img/upg_bow.png);
+    background-size: cover;
+    height: 100px;
+    width:100px;
+ }
+ .wand{
+    background-image: url(/img/upg_wand.png);
+    background-size: cover;
+    height: 100px;
+    width:100px;
+ }
+ .knife{
+    background-image: url(/img/upg_dagger.png);
+    background-size: cover;
+    height: 100px;
+    width:100px;
+ }
+
+ #scoreBoard{
+     font-size: xx-large;
+ }
+
+ .scoreBoardPlayer{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+ }
+ .scoreBoardLabels{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-position:center;
+ }
+ .scoreBoardValues{
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+ 
+
+ #playerTwoScoreBoard{
+    position: absolute;
+    left:85%;
+    top:5%;
+    padding: 10px;
+    border: 5px solid black;
+    background-color: firebrick;
+ }
+ #playerOneScoreBoard{
+     position: absolute;
+     left:5%;
+     top:5%;
+     padding: 10px;;
+     border: 5px solid black;
+     background-color: steelblue;
+
+ }
+
+ .lifeIcon{
+    background-image: url(/img/FFXIV_Healer_Icon.png);
+}
+
+.attackIcon{
+    background-image: url(/img/FFXIV_DPS_Icon.png);
+}
+
+ .defenseIcon{
+     background-image: url(/img/FFXIV_Tank_Icon.png);
+ }
+
+ /*
+ .scoreboardLine{
+
+ }
+ */
+
+ #battleBoard{
+    width: 1000px;
+    height: 290px;
+    background-image: url(/img/pixel-art-sun-grass-clouds-wallpaper.jpg);
+    background-size: 1000px 290px;
+    position: absolute;
+    left: 20%;
+    top: 17%;
+    background-repeat: no-repeat;
+    display: none;
+ }
+ #playerOneCharacter{
+    position: absolute;
+    top: 60%;
+    left: 17%;   
+ }
+
+ .battleBtnDisable{
+    filter: sepia(0%) hue-rotate(0deg) saturate(0%);     
+ }
+
+ #playerTwoCharacter{
+    position: absolute;
+    left: 72%;
+    top: 60%;
+ }
+
+ .playerBtn{
+    position: absolute;
+    top: 30%;
+    width:50px;
+    height: 50px;
+    cursor: pointer;
+ }
+ #playerOneAttackBtn{
+     position: absolute;
+     left:150px;
+ }
+ #playerOneDefenseBtn{
+     position:absolute;
+     left:230px;
+ }
+
+ #healthBarPlayerOne{
+    position: absolute;
+    top: 270px;
+    left: 140px;
+ }
+ #playerTwoBtn{
+     left:70%
+ }
+
+#playerTwoAttackBtn{
+    position: absolute;
+}
+#playerTwoDefenseBtn{
+    position: absolute;
+    left:80px;
+}
+
+#healthBarPlayerTwo{
+    position: absolute;
+    top: 270px;
+    right: 154px;
+}
+
+#newGameBtn{
+    position: absolute;
+    top: 120%;
+    left: 43%;
+    width: 150px;
+    height: 55px;
+    background-color: midnightblue;
+    color: yellow;
+    
+}
+
+.playerWinner{
+    height: 100px;
+    position: absolute;
+    left: 376px;
+    top: 83px;
+    width: 233px;
+    font-size: xx-large;
+    padding: 14px;
+}
